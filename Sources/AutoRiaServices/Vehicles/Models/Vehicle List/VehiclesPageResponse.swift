@@ -10,7 +10,7 @@ import Foundation
 //MARK: - Search Response
 public struct VehiclesPageResponse: Codable, Equatable {
     let result: VehiclesPageResponse.Result
-    var vehiclesIds: [String] { result.searchResult.ids }
+    public var vehiclesIds: [String] { result.searchResult.ids }
 }
 
 //MARK: - Response's Result
